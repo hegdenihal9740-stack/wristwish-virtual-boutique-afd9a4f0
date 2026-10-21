@@ -1342,3 +1342,16 @@ html, body { overflow-x: clip; }
 
 
 
+
+/* Mobile: edge-to-edge photo box, header fits */
+@media (max-width: 760px) {
+  .fk-page .fk-left { padding: .5rem 0 1rem; border: 0; border-radius: 0; box-shadow: none; outline: 0; }
+  .fk-page .fk-imgbox { padding: 0; }
+  .fk-page .fk-imgbox, .fk-page .fk-slide, .fk-page .fk-slider { outline: 0; border: 0; box-shadow: none; }
+  .fk-page .fk-right { border-left: 0; border-right: 0; }
+  .fk-page .fk-index { padding-left: 1rem; }
+  .shop-header { padding: .6rem .6rem; gap: .4rem; }
+  .shop-brand { flex: 1 1 auto; overflow: hidden; text-overflow: ellipsis; }
+  .shop-right { flex-shrink: 0; }
+  .shop-login-link { padding: .45rem .5rem; font-size: .62rem; letter-spacing: 0; gap: .25rem; }
+}
