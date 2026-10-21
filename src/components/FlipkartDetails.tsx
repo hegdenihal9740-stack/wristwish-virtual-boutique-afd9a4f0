@@ -154,8 +154,8 @@ export function FlipkartDetails({
             >
               <div className="fk-slider" ref={sliderRef} onScroll={onSlide}>
                 {imgs.map((src, i) => isFeat(src)
-                  ? <div key={src} className="fk-imgbox fk-slide is-feat">{feat}</div>
-                  : <div key={src} className="fk-imgbox fk-slide is-zoomable" onClick={() => openPhoto(i)}><img src={src} alt={w.name} draggable={false} /></div>)}
+                  ? <div key={src} className={`fk-imgbox fk-slide is-feat ${i === idx ? 'is-active' : ''}`}>{feat}</div>
+                  : <div key={src} className={`fk-imgbox fk-slide is-zoomable ${i === idx ? 'is-active' : ''}`} onClick={() => openPhoto(i)}><img src={src} alt={w.name} draggable={false} /></div>)}
 
               </div>
               <button type="button" className="fk-slide-nav is-prev" onClick={() => slideTo(idx - 1)} aria-label="Previous image"><ChevronLeft size={20} /></button>
